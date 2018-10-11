@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>hw2-1</title>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+    table{
+        font-family: Arial;
+        text-align: center;
+        color: navy;
+        width:70%;
+        border: 3px black solid;
+        margin: 10px auto 10px auto;
+    }
+    tr,td{
+        border: 2px black solid;
+    }
+    h1#title{
+        font-size: xx-large;
+        color: navy;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    td#firstrow{
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+    }
+    tr#secondrow{
+        background-color: yellow;
+        font-weight: bold;
+    }
+    td#grey{
+        background-color: gray;
+    }
+    td#lime{
+        background-color: lime;
+    }
+    </style>
+
+</head>
+
+<body>
+    <table>
+    <!--Title Row-->
+    <h1 id="title">Exclusive Gifts for All Occasions</h1>
+
+    <!--First Row-->
+    <tr>
+        <td id="firstrow" colspan="4">This is an exclusive vase from the Ming Dynasty.<br>It is available in two sices, with and without gold plating</td>
+    </tr>
+    
+    <!--Second Row-->
+    <tr id="secondrow">
+        <td>Picture</td>
+        <td>Size</td>
+        <td>Plating</td>
+        <td>Price</td>
+    </tr>
+
+    <!--image-->
+    <tr>
+        <td id= "grey" rowspan="4"><img src="Images/ming.jpg"> </td>
+            <td id= "grey" rowspan="2">Small</td>
+            <td id= "grey">Without Plating</td>
+            <td id= "grey">$$65.00</td>
+        <tr>
+            <td id= "lime">With Gold Plating</td>
+            <td id= "lime">$165.00</td>
+        </tr>
+    </tr>
+
+    <tr>
+            <td id= "grey" rowspan="2">Large</td>
+            <td id= "grey">Without Plating</td>
+            <td id= "grey">$$265.00</td>
+        </tr>
+        <tr>
+            <td id= "lime">With Gold Plating</td>
+            <td id= "lime">$565.00</td>
+        </tr>
+
+    </table>
+</body>

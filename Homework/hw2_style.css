@@ -1,0 +1,52 @@
+table{
+    font-family: Arial;
+    text-align: center;
+    color: navy;
+    width:70%;
+    border: 3px black solid;
+    margin: 10px auto 10px auto;
+}
+tr,td{
+    border: 2px black solid;
+}
+h2#heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: navy;
+    text-align: center;
+}
+td#firstrow{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+}
+tr#secondrow{
+    background-color: yellow;
+    font-weight: bold;
+}
+td#greycolor{
+    background-color: gray;
+}
+td#limecolor{
+    background-color: lime;
+}
+
+
+The heading “Exclusive Gifts for All Occasions” is created using the tag. 
+The font size is XX-Large. The color is Navy. (2)
+
+The first row has the text shown in two lines. 
+The text is italicized, bolded, and is centered within the row. The background for this cell is white. (2)
+
+The second row has the column headings. It has a yellow background (1)
+
+The other rows have silver or lime background as shown in the figure below (2)
+
+The image is centered within the cell. 
+Center the image as best as you can and as close to how the image is shown in the table below (4).
+
+The table has a width of 70% and is centered on the web page. 
+Its border is 3px thick and is a black, solid border. The table has its top and bottom margins set to 10px. (2)
+
+The cells have a 2px thick solid black border. (2)

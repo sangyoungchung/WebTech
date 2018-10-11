@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>hw2-2 </title>
+    <style type="text/css">
+        html{
+            background-color: black;
+        }
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url(Images/beaver.jpg)
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 3em;
+        }
+        table{
+            background-color: silver;
+            width: 50%;
+            margin: 10px auto 10px auto;
+        }
+        tr#header{
+            text-align: center;
+        }
+        tr,td{
+            border: 2px black solid;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Soap Survey</h1>
+    <Form method="POST" action="mailto:dchu1@babson.edu"> 
+    <table>
+        <tr id="header">
+            <td>Soap Image</td>
+            <td>Soap Color <br> Preference</td>
+            <td>Soap Purchase <br> Intent</td>
+            <td>Soap Features Liked</td>
+        </tr>
+        <tr>
+            <td><img src="Images/soap-2.jpg" style="width:125px;"> </td>
+            <td>
+                    <input type="radio" name="Color Preference" value="Green"/>
+                    Green
+                <br>
+                    <input type="radio" name="Color Preference" value="Gold"/>
+                    Gold (shown)
+                <br>
+                    <input type="radio" name="Color Preference" value="Red"/>
+                    Red
+            </td>
+            <td>
+                At $5.00/Unit
+                <br>
+                <select name="Purchase Intent">
+                    <option value="5">Definitely Buy</option>
+                    <option value="4">Likely Buy</option>
+                    <option value="3">Undecided</option>
+                    <option value="2">Unlikely Buy</option>
+                    <option value="1">Not Buy</option>
+                </select>
+            </td>
+            <td>
+                <input type ="checkbox" name="Features Liked" value="Shape"/> Shape
+                <br>
+                <input type ="checkbox" name="Features Liked" value="Size"/> Size
+                <br>
+                <input type ="checkbox" name="Features Liked" value="Smell"/> Smell
+                <br>
+                <input type ="checkbox" name="Features Liked" value="Texture"/> Texture
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="Images/soap-1.jpg" style="width:120px;"> </td>
+            <td>
+                    <input type="radio" name="Color Preference" value="Ivory"/>
+                    Ivory
+                <br>
+                    <input type="radio" name="Color Preference" value="Sandal Wood"/>
+                    Sandal Wood (shown)
+                <br>
+                    <input type="radio" name="Color Preference" value="Pink"/>
+                    Pink
+            </td>
+            <td>
+                At $8.00/Unit
+                <br>
+                <select name="Purchase Intent">
+                    <option value="5">Definitely Buy</option>
+                    <option value="4">Likely Buy</option>
+                    <option value="3">Undecided</option>
+                    <option value="2">Unlikely Buy</option>
+                    <option value="1">Not Buy</option>
+                </select>
+            </td>
+            <td>
+                <input type ="checkbox" name="Features Liked" value="Shape"/> Shape
+                <br>
+                <input type ="checkbox" name="Features Liked" value="Size"/> Size
+                <br>
+                <input type ="checkbox" name="Features Liked" value="Smell"/> Smell
+                <br>
+                <input type ="checkbox" name="Features Liked" value="Texture"/> Texture
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center; background-color:white;">Tell us about yourself...</td>
+        </tr>
+        <tr>
+            <td colspan="1">
+            Gender: <select name="Gender">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+            </td>
+            <td colspan="3">
+                Age: (under 25 enter 1, 25-40 enter 2, else enter 3)
+                <input type="text" name="age" cols="3" maxlength="3" size="12" style="background-color:yellow;"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Your comments are welcome: <br>
+                <textarea name="comments" rows="5" cols="50" style="background-color:yellow;"></textarea>
+            </td>
+            <td colspan="2" style="text-align:center;">
+                <button type="submit" name="Done" value="submit"> Done </button>
+                <button type="oops" name="oops" value="oops" style="background-color:red;"> Oops </button>
+            </td>
+        </tr>
+    </table>
+    </Form>
+
+    <div class="footer">
+        <img src="Images/beaver.jpg">
+    </div>
+</body>
+
+</html>
