@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+<title>Web Technologies - Your Name </title>
+        <script type="text/javascript">
+          function   ask(){ 
+                
+          //  let message = prompt ("what day is it today?");
+        
+           // document.getElementById("userInput").innerHTML = message;
+            
+           // let name= prompt("what is your name?");
+
+
+            //if((message == "Tuesday") && (name=="chung"))
+            {
+               // document.getElementById("result").innerHTML = "Correct!";
+            }
+       //alert("How are you today?")
+        }
+        
+        let x =prompt("What is your gender?");
+document.getElementById("userInput").innerHTML = x;
+if (x.toLowerCase == "male"||x.toLowerCase()== "man"){
+    
+    document.getElementById("result").innerHTML = "Hello, Sir! How are you?";
+document.getElementById("image1").src = "tiger1.jpg";
+
+}
+else if{ x.toLowerCase()=="female"|| x.toLowerCase == "woman")
+     document.getElementById("result").innerHTML = "Hello, Madam! How are you?";
+     document.getElementById("image1").src = "tiger1.jpg";
+     }
+
+function 
+clean(){document.getElementById("").innerHTML = x;
+document.getElementById("result").innerHTML = "";
+document.getElementById("image1").src = "";
+}   
+        </script>
+}
+</head>
+
+<body>
+<h1>conditional statement Demo</h1>
+
+<button onclick="ask()">Click Me</button>
+<button onclick="clean()">clean</button>
+<p>
+    input:<span id="userInput"></span> 
+   </p>
+   <p>result:<span id="result"><br>
+<img id="image1" src="tiger1.jpg" ></span></p>
+
+</body>
+
+</html>

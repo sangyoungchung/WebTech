@@ -13,16 +13,16 @@
             }
         </style>
         <script type="text/javascript">
-function enlarge() {
-let i = document.getElementById("map");
+function enlarge(x) {
+let i = document.getElementById(x);
 let w = i.width;
 // alert(w)
 i.width = w * (1+ (0.5)); 
 //alert("w; " + w + " the current width" + i.width);
 i.style.border = "red 1px solid"
 };
-function shrink() {
-let i = document.getElementById("map");
+function shrink(y) {
+let i = document.getElementById(y);
 let w = i.width;
 // alert(w)
 i.width = w / (1+ (0.5)); 
@@ -38,10 +38,13 @@ i.style.border = "red 1px solid"
         <h2> Manipulating Styles and Images </h2>
 
         <p><img src="usa.png" alt="Image goes here" title="map of USA" width="400" 
-            onmouseover="enlarge()" onmouseout="shrink()" id="map"></p>
+            onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)" id="map"></p>
 
         <hr>
-        <p> <img src="beaver.jpg"onmouseover="enlarge()"> </p>
+        <p> <img src="beaver.jpg"onmouseout="shrink(this.id)" onmouseover="enlarge(this.id)" id="second"> </p>
+
+        <p><img src="tiger1.jpg" width="400" 
+            onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)" id="tiger"></p>
        
 
 
