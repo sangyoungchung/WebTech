@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Exam - Index.htm</title>
+        <style type="text/css">
+            h1 {
+                font-family: Arial;
+                font-weight: bold;
+                text-align: center;
+            }
+			body {font-family: cursive; font-style: italic; font: 1.5em;
+			margin-left: 250px; margin-right: 250px}
+			ol {background-color: silver; padding-left: 200px; padding-top: 20px; padding-bottom: 20px}
+			a {color: olive; text-decoration: none}
+        </style>
+		<script>
+			function chgback()
+			{
+				document.getElementById("list").style.backgroundColor = "orange"
+			}
+			function normal()
+			{
+				document.getElementById("list").style.backgroundColor = "silver"
+			}
+		</script>
+    </head>
+	
+    <body text="olive">
+        <!-- Your HTML goes here -->
+        <h1> Summer 2017 Exam - Index Page</h1>
+        
+		<ol id="list">
+			<li>Question 2</li>
+				<ul>
+					<li><a href="question2.htm" onMouseOver="chgback()" onMouseOut="normal()">Retina Display</a></li>
+					<li><a href="question2.htm" onMouseOver="chgback()" onMouseOut="normal()">Criticism</a></li>
+				</ul>
+			<li><a href="question3.htm" onMouseOver="chgback()" onMouseOut="normal()">Question 3</a></li>
+			<li><a href="question4.htm" onMouseOver="chgback()" onMouseOut="normal()">Question 4</a></li>
+			<li><a href="question5.htm" onMouseOver="chgback()" onMouseOut="normal()">Question 5</a></li>
+		</ol>
+   		
+    </body>
+
+    <!-- If you see this comment, please delete me :-) -->
+
+</html>

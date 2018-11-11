@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Web Technologies - Your Name </title>
+        <script type="text/javascript">
+        function choose(){
+            let ankur = document.getElementById("form1")
+            let userChoice;
+            if (ankur.colors[0].checked){
+                userChoice = ankur.colors[0].value;
+            
+            }
+            else {
+                userChoice = " nothing yet"
+
+            }
+
+            document.getElementById("choice").innerHTML = userChoice;
+
+            return false
+
+
+
+        }
+        
+        
+        </script>
+
+</head>
+
+<body>
+    <h1>Array Demo</h1>
+        <form action="" method="post" id="form1">
+                Red: <input type="radio" name="colors" value="red">
+                Blue: <input type="radio" name="colors" value="blue">
+                Yellow: <input type="radio" name="colors" value="yellow">
+                Green: <input type="radio" name="colors" value="green">
+                <button onclick="return choose()">Click me!</button>
+                <input type="reset" value="clear"><input>
+                
+        </form>
+                <p>You have chosen<span id= "choice"></span></p>
+</body>
+
+</html>

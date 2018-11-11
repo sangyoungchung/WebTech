@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Web Technologies - Your Name </title>
+        <script type="text/javascript">
+        function calc (){
+            let result = 0;
+            //solution 1
+           // for (let i = 0; i <=10; i = i + 2){
+           //     result += i;
+         //   }
+           document.getElementById("result").innerHTML = result;
+
+
+//        }
+//solution 2
+ //       for(let i = 0; i < 6; i++){
+   //         result += i * 2; 
+     //       alert("after adding " + i * 2 +" result becomes " +result)       }
+       //     document.getElementById("result")
+         //   .innerHTML = result;}
+
+//solution 3
+
+        for(let i = 0; i<=10 ; i++ ){
+            if( i % 2 == 0 ) {  // ==0 to ==1 becomes all odd numbers
+                result + = i;
+
+            }
+            document.getElementById("result").innerHTML = result;}
+        }
+
+        </script>
+
+</head>
+
+<body>
+<h1>Calculating sum of even numbers from 0 to 10</h1>
+<button onclick="calc()">Calculate</button>
+<p id="result"></p>
+</body>
+
+</html>
