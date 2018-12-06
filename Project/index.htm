@@ -2,37 +2,108 @@
 <html>
 
 <head>
+                <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+                <meta name="description" content="Secret Dining Places in Seoul">
+         <meta name="keywords" content="Seoul, Food, Korea, South Korea, Korean cuisine, Japanese cuisine ,
+          Vietnamese cuisine, Italian cuisine">
         <meta charset="UTF-8">
         <title>Sangyoung Chung's Secret places in South Korea</title>
-<style> h1{text-align:center; color: olive;}
+<style> 
+                
+                {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+                .link{text-decoration: underline; color:blueviolet;}
+		p {text-align: center; font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; font-size: 16pt; color: darkblue;}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+h1{text-align:center; color: olive;}
         body{background-image: url(southkorea.jpg);
         background-repeat: no-repeat;
-        background-size: 100%;}
+        background-size: 120%;}
         p{color: aliceblue;}
-
+        body {font-family: Verdana, sans-serif; margin:0}
 </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
+		function welcome()
+		{
+			document.getElementById("head").innerHTML = "Welcome to Marvel World!"
+		}
+		function BGcolor() 
+{
+         var bgColors = new Array("red","black","blue","green","orange", "purple");
+         document.getElementById("head").style.backgroundColor=bgColors[Math.floor(Math.random()*6)]};
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+
+</script>
         
 </script>
 </head>
 
 <body>
+
 <h1>Sangyoung Chung's Secret places in South Korea</h1>
 <!-- Navigation Bar-->
 
-<div class="navbar">
-        <a href="index.htm">Home</a>
-        <a href="Japanese.htm">Japanese</a>
-        <a href="Vietnamese.htm">Vietnamese</a>
-        <a href="Italian.htm">Italian</a>
-        <a href="Korean.htm">Korean</a>
-       <a href="contact.htm">Contact</a>
-       <a href="sitemap.htm">Sitemap</a>
-       <a href="credit.htm">Credit</a>
-                
-        </div>
+
+<div class="topnav">
+                <a href="index.htm">Home</a>
+                <a href="Japanese.htm">Japanese</a>
+                <a href="Vietnamese.htm">Vietnamese</a>
+                <a href="Italian.htm">Italian</a>
+                <a href="Korean.htm">Korean</a>
+               <a href="contact.htm">Contact</a>
+               <a href="sitemap.htm">Sitemap</a>
+               <a href="credit.htm">Credit</a>
+              </div>
+              
+
 
 </div>
+<br>
+<h2 id="flip">Welcome!</h2>
+<div id="panel">
 <br>
 <audio controls autoplay>
                 <source src="Elder_Dilemma.mp3" type="audio/ogg">
@@ -46,7 +117,7 @@
 <br>
 <p>Welcome to Sangyoungchung's webpage! </p>
 <p>Through my webpage, I hope you experience a great food in South Korea, so that you have a fond memory of times past.</p>
-
+</div>
 </body>
 
 </html>
